@@ -79,7 +79,7 @@
 			
 			mainCamera = new Camera3D(0.1, 10000);
 			mainCamera.view = new View(stage.stageWidth, stage.stageHeight, false, 0, 1, 4);
-			mainCamera.view.backgroundColor = 0x001000;
+			mainCamera.view.backgroundColor = 0x000000;
 			mainCamera.view.hideLogo();
 			addChild(mainCamera.view);
 			setChildIndex(mainCamera.view, 0);
@@ -94,7 +94,7 @@
 			var container:Object3D = new Object3D();
 			scene.addChild(container);
 			
-			var lod:LoadScene = new LoadScene("http://smwpro.ru/flash3D/res/building.dae", scene);;//new LoadScene("http://smwpro.ru/flash3D/res/Man.A3D", scene); 
+			var lod:LoadScene = new LoadScene("scene.A3D", scene);;//new LoadScene("http://smwpro.ru/flash3D/res/Man.A3D", scene); 
 			lod.addEventListener(Event.COMPLETE, onLoadModel);
 		}	
 		
